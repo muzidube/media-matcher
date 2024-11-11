@@ -22,8 +22,10 @@ Media Matcher is an interactive application designed to help users discover movi
 
 ## Screenshots
 
-![Homepage](<img width="1680" alt="image" src="https://github.com/user-attachments/assets/57f95131-3e64-47a9-8385-39df2a238931">)
+(<img width="1680" alt="image" src="https://github.com/user-attachments/assets/57f95131-3e64-47a9-8385-39df2a238931">)
 _Homepage with genre selection_
+
+
 
 ![Media Lists](<img width="1680" alt="image" src="https://github.com/user-attachments/assets/5d7c5abf-80b5-4d03-9253-31546e888dd2">)
 
