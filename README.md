@@ -32,9 +32,8 @@ _Detailed view of selected media_
 
 - Angular 18.2.11
 - TypeScript
-- RxJS
 - Angular Material
-- SCSS
+- Tailwind
 - HTML5
 - REST APIs
 
