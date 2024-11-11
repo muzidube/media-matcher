@@ -21,16 +21,12 @@ Media Matcher is an interactive application designed to help users discover movi
   - IsThereAnyDeal for game pricing
 
 ## Screenshots
-
-(<img width="1680" alt="image" src="https://github.com/user-attachments/assets/57f95131-3e64-47a9-8385-39df2a238931">)
 _Homepage with genre selection_
-
-
-
-![Media Lists](<img width="1680" alt="image" src="https://github.com/user-attachments/assets/5d7c5abf-80b5-4d03-9253-31546e888dd2">)
-
-![Media Details](<img width="1680" alt="image" src="https://github.com/user-attachments/assets/1480862f-2560-4f40-a560-0d1340907d37">)
+<img width="1680" alt="image" src="https://github.com/user-attachments/assets/57f95131-3e64-47a9-8385-39df2a238931">
+_Media lists after genre selection_
+<img width="1680" alt="image" src="https://github.com/user-attachments/assets/5d7c5abf-80b5-4d03-9253-31546e888dd2">
 _Detailed view of selected media_
+<img width="1680" alt="image" src="https://github.com/user-attachments/assets/1480862f-2560-4f40-a560-0d1340907d37">
 
 ## Tech Stack
 
