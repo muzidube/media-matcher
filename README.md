@@ -13,7 +13,7 @@ Media Matcher is an interactive application designed to help users discover movi
 
 - Genre-based media recommendations
 - Comprehensive media details
-- Direct links to streaming/purchasing/deal options
+- Direct links to streaming/purchasing options
 - Integration with:
   - TMDB API for movie and TV show lists
   - IGDB API for game lists
