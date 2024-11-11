@@ -15,15 +15,19 @@ Media Matcher is an interactive application designed to help users discover movi
 - Comprehensive media details
 - Direct links to streaming/purchasing options
 - Integration with:
-  - JustWatch for movies and TV shows
+  - TMDB API for movie and TV show lists
+  - IGDB API for game lists
+  - JustWatch for movies and TV shows streaming/buying options
   - IsThereAnyDeal for game pricing
 
 ## Screenshots
 
-![Homepage](path/to/homepage-screenshot.png)
+![Homepage](<img width="1680" alt="image" src="https://github.com/user-attachments/assets/57f95131-3e64-47a9-8385-39df2a238931">)
 _Homepage with genre selection_
 
-![Media Details](path/to/details-screenshot.png)
+![Media Lists](<img width="1680" alt="image" src="https://github.com/user-attachments/assets/5d7c5abf-80b5-4d03-9253-31546e888dd2">)
+
+![Media Details](<img width="1680" alt="image" src="https://github.com/user-attachments/assets/1480862f-2560-4f40-a560-0d1340907d37">)
 _Detailed view of selected media_
 
 ## Tech Stack
