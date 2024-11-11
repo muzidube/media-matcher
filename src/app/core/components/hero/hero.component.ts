@@ -16,6 +16,7 @@ export class HeroComponent {
   genres = Object.values(Genres);
   selectedGenre = '';
   isLoading = false;
+  imgUrl = 'images/magic-box.jpg';
 
   constructor(private resultsService: ResultsService) {}
 
