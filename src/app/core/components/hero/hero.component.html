@@ -1,0 +1,47 @@
+<section
+  id="hero"
+  class="px-8 z-10 relative bg-[url('/images/magic-box.jpg')] bg-cover bg-top after:content-[''] snap-start after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-black after:opacity-70 after:-z-10"
+>
+  <div
+    class="min-h-screen w-full flex flex-col items-center max-w-screen-xl my-auto mx-auto justify-center"
+  >
+    <div>
+      <h1
+        class="block w-fit text-5xl md:text-6xl relative animate-text-reveal-one text-transparent"
+      >
+        Hello
+        <span
+          class="absolute top-0 left-0 h-full w-0 bg-[#222222] animate-text-reveal-box"
+        ></span>
+      </h1>
+      <h1
+        class="block w-fit text-5xl md:text-6xl relative animate-text-reveal-two text-transparent"
+      >
+        Let's make your evening easier
+        <span
+          class="absolute top-0 left-0 h-full w-0 bg-[#222222] animate-text-reveal-box-two"
+        ></span>
+      </h1>
+      <h1
+        class="mt-2 block w-fit text-5xl md:text-6xl relative animate-text-reveal-genre bg-[length:400%_auto] bg-clip-text text-transparent pb-1 italic pr-1"
+      >
+        Pick a genre
+        <span
+          class="absolute top-0 left-0 h-full w-0 bg-[#222222] animate-text-reveal-box-three"
+        ></span>
+      </h1>
+    </div>
+    <div
+      class="flex flex-wrap gap-4 mt-12 items-center justify-between opacity-0 animate-fade-in"
+    >
+      @for (genre of genres; track genre) {
+      <app-genre-button
+        [genre]="genre"
+        [isSelected]="isGenreSelected(genre)"
+        [disabled]="isLoading"
+        (genreSelected)="handleGenreSelection($event)"
+      ></app-genre-button>
+      }
+    </div>
+  </div>
+</section>

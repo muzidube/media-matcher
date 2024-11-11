@@ -1,0 +1,32 @@
+@if (movies.length > 0 || tvShows.length > 0 || games.length > 0) {
+<section id="results" class="z-10 relative bg-gray-100 snap-start pt-2 px-4">
+  <div
+    class="min-h-screen w-full flex flex-col items-center max-w-screen-xl my-0 mx-auto justify-center mt-2"
+  >
+    <h1 class="text-lg md:text-2xl font-bold">Movies</h1>
+    <div
+      class="w-full h-full overflow-x-scroll overflow-y-hidden flex justify-start items-start content-start whitespace-nowrap gap-4 mt-2"
+    >
+      @for (movie of movies; track movie.id) {
+      <app-media [media]="movie" [type]="'movie'"></app-media>
+      }
+    </div>
+    <h1 class="text-lg md:text-2xl font-bold">TV</h1>
+    <div
+      class="w-full h-full overflow-x-scroll overflow-y-hidden flex justify-start items-start content-start whitespace-nowrap gap-4 mt-2"
+    >
+      @for (tvShow of tvShows; track tvShow.id) {
+      <app-media [media]="tvShow" [type]="'tv'"></app-media>
+      }
+    </div>
+    <h1 class="text-lg md:text-2xl font-bold">Games</h1>
+    <div
+      class="w-full h-full overflow-x-scroll overflow-y-hidden flex justify-start items-start content-start whitespace-nowrap gap-4 mt-2"
+    >
+      @for (game of games; track game.id) {
+      <app-media [media]="game" [type]="'game'"></app-media>
+      }
+    </div>
+  </div>
+</section>
+}

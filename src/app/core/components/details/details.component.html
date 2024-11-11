@@ -1,0 +1,103 @@
+@if (displayDetails?.title) {
+<section
+  id="details"
+  class="z-10 relative bg-cover bg-top after:content-[''] snap-start after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-black after:opacity-70 after:-z-10"
+  [style.backgroundImage]="
+    'url(' + (displayDetails?.backgroundPath || '') + ')'
+  "
+>
+  <div
+    class="min-h-screen w-full flex items-center max-w-screen-xl my-0 mx-auto justify-start"
+  >
+    <div
+      class="flex content-center justify-center flex-wrap box-border bg-hero-gradient"
+    >
+      <div class="py-7 px-10 max-w-screen-xl w-full z-0 box-border">
+        <section
+          class="original-header content-wrapper flex flex-wrap box-border text-white justify-center md:flex-nowrap"
+        >
+          <div
+            class="poster-wrapper h-auto min-w-64 border-0 overflow-hidden rounded-lg box-border flex text-white items-center"
+          >
+            <div
+              class="poster text-white block min-w-64 h-96 relative top-0 left-0 box-border"
+            >
+              <div
+                class="image-content backdrop text-white w-full min-w-full h-full box-border"
+              >
+                <img
+                  class="block w-full min-w-full h-full min-h-full border-0 outline-none text-whit rounded-lg"
+                  [src]="displayDetails?.posterPath"
+                  [alt]="displayDetails?.title"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="info text-white flex box-border py-1.5">
+            <section
+              class="text-white flex flex-wrap items-start content-center box-border md:pl-10"
+            >
+              <div
+                class="title text-white w-full mb-2 flex flex-wrap box-border"
+              >
+                <h2
+                  class="text-white w-full m-0 p-0 text-4xl flex flex-wrap flex-col font-semibold box-border md:flex-nowrap"
+                >
+                  <p
+                    class="text-white font-bold decoration-none box-border bg-transparent text-4xl"
+                  >
+                    {{ displayDetails?.title }}
+                  </p>
+                  <span class="font-normal text-gray-600 box-border text-3xl">
+                    {{ displayDetails?.releaseDate }}
+                  </span>
+                </h2>
+                <div class="facts flex italic text-gray-500">
+                  {{ displayDetails?.status }}
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <app-rating
+                  [rating]="displayDetails?.voteAverage || 0"
+                  [details]="true"
+                />
+                <a
+                  [href]="moreInfoUrl"
+                  target="_blank"
+                  class="text-white hover:text-gray-300"
+                  title="Options"
+                >
+                  <img
+                    [src]="iconUrl"
+                    alt="More info"
+                    class="w-12 h-12 rounded-full"
+                  />
+                </a>
+              </div>
+              <div class="details text-white w-full box-border">
+                <h3
+                  class="tagline text-gray-500 m-0 p-0 text-1.1em font-normal italic w-full box-border"
+                >
+                  {{ displayDetails?.tagline }}
+                </h3>
+                <h3
+                  class="overview mt-2.5 text-whitew-full mb-2 font-semibold text-1.3em p-0 box-border"
+                >
+                  Overview
+                </h3>
+                <div class="text-white box-border">
+                  <p class="m-0 text-white text-1em p-0 box-border">
+                    {{ displayDetails?.overview }}
+                  </p>
+                </div>
+                <!-- <app-key-facts [id]="id"></app-key-facts> -->
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+}

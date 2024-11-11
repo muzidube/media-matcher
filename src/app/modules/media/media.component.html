@@ -1,0 +1,11 @@
+<div
+  (click)="handleClick()"
+  class="min-h-40 min-w-16 xs:min-h-48 xs:min-w-24 md:min-h-60 md:min-w-32 overflow-hidden bg-grey-background whitespace-nowrap cursor-pointer"
+>
+  <img
+    class="rounded-lg shadow-md inline-block w-full min-h-32 xs:min-h-40 md:min-h-52 outline-none border-none bg-gray-background"
+    [src]="posterUrl"
+    alt="hello"
+  />
+  <app-rating [rating]="rating" />
+</div>

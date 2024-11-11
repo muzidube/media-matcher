@@ -1,0 +1,61 @@
+<div class="scale-65 md:scale-100 flex items-center">
+  <div class="pb-0 px-2.5 relative whitespace-normal grid content-start w-full">
+    <div class="absolute -top-5 left-2.5 inline-block whitespace-normal">
+      <div
+        class="outer-ring mr-0 w-[46px] h-[46px] p-0.5 rounded-full inline-block whitespace-normal bg-black"
+      >
+        <div class="relative inline-block w-full h-full text-center">
+          <div
+            class="w-full h-full flex items-center justify-center text-center whitespace-normal"
+          >
+            <div class="percent relative w-[48px] h-[48px]">
+              <svg
+                class="progress-ring relative w-[48px] h-[48px] transform -rotate-90"
+              >
+                <circle
+                  class="progress-ring__circle w-[48px] h-[48px] transform translate-x-[5px] translate-y-[5px] fill-none"
+                  stroke-width="3"
+                  stroke-dasharray="120"
+                  stroke-dashoffset="0"
+                  [attr.stroke]="ratingBgColor"
+                  r="19"
+                  cx="19"
+                  cy="19"
+                />
+                <circle
+                  class="progress-ring__circle w-[48px] h-[48px] transform translate-x-[5px] translate-y-[5px] fill-none"
+                  stroke-width="3"
+                  stroke-dasharray="120"
+                  [attr.stroke-dashoffset]="ratingOffset"
+                  stroke-linecap="round"
+                  [attr.stroke]="ratingColor"
+                  r="19"
+                  cx="19"
+                  cy="19"
+                />
+              </svg>
+              <div
+                class="number absolute top-0 left-0 w-full h-full flex justify-center items-center text-white"
+              >
+                <h2
+                  class="pl-px pt-px text-xs items-center justify-center text-center whitespace-normal"
+                >
+                  {{ rating || "N/A" }}<span class="text-[0.4rem]">%</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @if (details) {
+  <div
+    class="text font-bold ml-12 whitespace-pre-line text-white box-border list-none my-2"
+  >
+    User
+    <br />
+    Score
+  </div>
+  }
+</div>

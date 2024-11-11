@@ -1,0 +1,14 @@
+<div class="h-screen snap-y snap-mandatory overflow-y-scroll font-quicksand">
+  <section id="hero" class="h-screen snap-start">
+    <app-hero></app-hero>
+  </section>
+  @if (hasResults$ | async) {
+  <section id="results" class="h-screen snap-start">
+    <app-results></app-results>
+  </section>
+  } @if (hasDetails$ | async) {
+  <section id="details" class="h-screen snap-start">
+    <app-details></app-details>
+  </section>
+  }
+</div>
