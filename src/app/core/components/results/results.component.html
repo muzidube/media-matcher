@@ -5,6 +5,7 @@
   >
     <h1 class="text-lg md:text-2xl font-bold">Movies</h1>
     <div
+      #scrollContainer
       class="w-full h-full overflow-x-scroll overflow-y-hidden flex justify-start items-start content-start whitespace-nowrap gap-4 mt-2"
     >
       @for (movie of movies; track movie.id) {
@@ -13,6 +14,7 @@
     </div>
     <h1 class="text-lg md:text-2xl font-bold">TV</h1>
     <div
+      #scrollContainer
       class="w-full h-full overflow-x-scroll overflow-y-hidden flex justify-start items-start content-start whitespace-nowrap gap-4 mt-2"
     >
       @for (tvShow of tvShows; track tvShow.id) {
@@ -21,6 +23,7 @@
     </div>
     <h1 class="text-lg md:text-2xl font-bold">Games</h1>
     <div
+      #scrollContainer
       class="w-full h-full overflow-x-scroll overflow-y-hidden flex justify-start items-start content-start whitespace-nowrap gap-4 mt-2"
     >
       @for (game of games; track game.id) {
